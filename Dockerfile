@@ -11,7 +11,7 @@ RUN apt-get update -y \
 RUN git clone https://github.com/doxygen/doxygen.git
 
 # Copy dependencies to the docker image
-COPY circle/ ./circle/
+COPY aarch/ ./aarch/
 COPY gcc-arm-8.2-2019.01-x86_64-aarch64-elf/ ./deps/
 COPY gcc-arm-none-eabi-8-2019-q3-update/ ./deps/
 
