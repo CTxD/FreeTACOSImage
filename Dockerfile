@@ -12,6 +12,5 @@ COPY gcc-arm-none-eabi-8-2019-q3-update/ ./deps/gcc-arm-none-eabi/
 COPY boost_1_70_0/ ./deps/boost/
 
 # Append bin folder of gcc arm compiler to bash configuration
-RUN echo "export PATH=$PATH:/deps/gcc-arm/bin" >> /root/.bashrc
-RUN echo "export PATH=$PATH:/deps/gcc-arm-none-eabi/bin" >> /root/.bashrc
+RUN echo "export PATH=$PATH:/deps/gcc-arm/bin:/deps/gcc-arm-none-eabi/bin" >> /root/.bashrc
 
